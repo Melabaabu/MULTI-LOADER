@@ -1,1 +1,1 @@
-web: python NILAM.py
+web: python sam.py
